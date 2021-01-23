@@ -1,0 +1,47 @@
+{
+    "name": "riipandi/laravel-midtrans",
+    "description": "Midtrans Payment API Wrapper for Laravel.",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0",
+        "midtrans/midtrans-php": "^2.0",
+        "illuminate/container": "^5.0|^6.0",
+        "illuminate/contracts": "^5.0|^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "^4.0"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Aris Ripandi",
+            "email": "riipandi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Riipandi\\Midtrans\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Riipandi\\Midtrans\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Riipandi\\Midtrans\\Providers\\MidtransServiceProvider"
+            ]
+        }
+    }
+}
