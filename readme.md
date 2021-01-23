@@ -369,7 +369,7 @@ Midtrans::shouldReceive('getSnapToken')
 $myToken = Midtrans::getSnapToken(['parameters'])); // returns "My Token"
 ```
 
-Official laravel documentation: [https://laravel.com/docs/5.8/mocking#mocking-facades](https://laravel.com/docs/5.8/mocking#mocking-facades)
+Official laravel documentation: [https://laravel.com/docs/8.x/mocking#mocking-facades](https://laravel.com/docs/8.x/mocking#mocking-facades)
 
 ### Running Tests
 
